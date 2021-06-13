@@ -18,7 +18,7 @@ function EditEventForm(props) {
     padding: "10px"
   }
 
-  const { event } = props;
+  // const { event } = props;
   const firestore = useFirestore();
 
   function handleEditEventFormSubmission(event) {

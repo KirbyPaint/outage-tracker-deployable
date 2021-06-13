@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function EventDetail(props) {
-  const { event } = props; //new code
+  const { event } = props;
 
   const EventDetailStyle = {
     border: "2px solid black",
@@ -26,7 +26,9 @@ function EventDetail(props) {
       <div style={EventDetailStyle}>
         <h1>Event Detail</h1>
         <p>{event.date} - {event.time}</p>
-        <p><em>{event.troubleshooting}</em></p>
+        <p>Outage Duration: <em>{event.duration}</em></p>
+        <p>Router/Model: <em>{event.routermodel}</em></p>
+        <p>Additional Notes/Troubleshooting: <em>{event.troubleshooting}</em></p>
         <button onClick={props.onClickingEdit} style={ButtonStyle}>Update Event's Details</button>
       </div>
     </>

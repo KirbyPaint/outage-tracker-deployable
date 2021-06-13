@@ -20,7 +20,7 @@ class EventControl extends React.Component {
 
   constructor(props) {
     super(props);
-    console.log(props);
+    // console.log(props);
     this.state = {
       selectedEvent: null,
       editing: false
@@ -35,16 +35,16 @@ class EventControl extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log("component updated!");
+    // console.log("component updated!");
   }
 
   componentWillUnmount() {
-    console.log("component unmounted!");
+    // console.log("component unmounted!");
     clearInterval(this.waitTimeUpdateTimer);
   }
 
   updateEventElapsedWaitTime = () => {
-    console.log("tick");
+    // console.log("tick");
   }
 
   handleAddingNewEventToList = () => {
@@ -81,7 +81,7 @@ class EventControl extends React.Component {
   }
 
   handleEditClick = () => {
-    console.log("handleEditClick reached!");
+    // console.log("handleEditClick reached!");
     this.setState({ editing: true });
   }
 

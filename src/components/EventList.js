@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Event from "../components/Event"
 // We need to import hooks functionality from both react-redux and react-redux-firebase.
 import { useSelector } from 'react-redux'
-import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase'
+import { useFirestoreConnect, isLoaded } from 'react-redux-firebase'
 
 
 function EventList(props) {
@@ -19,18 +19,24 @@ function EventList(props) {
 
   // The useFirestoreConnect() hook comes from react-redux-firebase.
   useFirestoreConnect([
-    { collection: 'events' }
+    {
+      collection: 'events',
+      orderBy: 'date',
+    }
   ]);
 
   // The useSelector() hook comes from react-redux.
+  // const events = useSelector(state => state.firestore.ordered.events);
   const events = useSelector(state => state.firestore.ordered.events);
+
+  // const sortedData = events.sort((a, b) => a.date.localeCompare(b.date));
 
   // react-redux-firebase also offers a useful isLoaded() function.
   if (isLoaded(events)) {
     return (
       <>
         <div style={EventListStyle}>
-          {events.map((event) => {
+          {events.slice(0).reverse().map((event) => {
             return <Event
               whenEventClicked={props.onEventSelection}
               date={event.date}

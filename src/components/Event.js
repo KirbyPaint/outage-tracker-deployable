@@ -16,7 +16,9 @@ function Event(props) {
     <>
       <div style={EventStyle} onClick={() => props.whenEventClicked(props.id)}>
         <p>{props.date} - {props.time}</p>
-        <p><em>{props.troubleshooting}</em></p>
+        <p>Outage Duration: <em>{props.duration}</em></p>
+        <p>Router/Model: <em>{props.routermodel}</em></p>
+        <p>Additional Notes/Troubleshooting: <em>{props.troubleshooting}</em></p>
       </div>
     </>
   );
