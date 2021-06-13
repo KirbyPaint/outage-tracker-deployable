@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/outage-tracker-deployable/static/css/main.69eda509.chunk.css",
+    "main.js": "/outage-tracker-deployable/static/js/main.2bdd25ec.chunk.js",
+    "main.js.map": "/outage-tracker-deployable/static/js/main.2bdd25ec.chunk.js.map",
+    "runtime-main.js": "/outage-tracker-deployable/static/js/runtime-main.fedda207.js",
+    "runtime-main.js.map": "/outage-tracker-deployable/static/js/runtime-main.fedda207.js.map",
+    "static/js/2.cf95128e.chunk.js": "/outage-tracker-deployable/static/js/2.cf95128e.chunk.js",
+    "static/js/2.cf95128e.chunk.js.map": "/outage-tracker-deployable/static/js/2.cf95128e.chunk.js.map",
+    "static/js/3.7b872907.chunk.js": "/outage-tracker-deployable/static/js/3.7b872907.chunk.js",
+    "static/js/3.7b872907.chunk.js.map": "/outage-tracker-deployable/static/js/3.7b872907.chunk.js.map",
+    "index.html": "/outage-tracker-deployable/index.html",
+    "precache-manifest.f185e234c187deb063a444ce127480da.js": "/outage-tracker-deployable/precache-manifest.f185e234c187deb063a444ce127480da.js",
+    "service-worker.js": "/outage-tracker-deployable/service-worker.js",
+    "static/css/main.69eda509.chunk.css.map": "/outage-tracker-deployable/static/css/main.69eda509.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fedda207.js",
+    "static/js/2.cf95128e.chunk.js",
+    "static/css/main.69eda509.chunk.css",
+    "static/js/main.2bdd25ec.chunk.js"
+  ]
+}
