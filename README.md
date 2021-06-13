@@ -1,3 +1,9 @@
+View this project at: https://outage-tracker-deployable.web.app/  
+Please feel free to login with the following credentials:  
+
+username: noname@email.com  
+password: password123  
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

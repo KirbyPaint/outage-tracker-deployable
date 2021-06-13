@@ -61,7 +61,7 @@ function Signin() {
   return (
     <>
       <div style={SignInStyle}>
-        <form onSubmit={doSignUp} style={SignInStyle}>
+        {/* <form onSubmit={doSignUp} style={SignInStyle}>
           <p>Sign up :
             <input style={TextStyle}
               type="text"
@@ -73,7 +73,7 @@ function Signin() {
               placeholder="Password" />
             <button type="submit" style={ButtonStyle}>Sign up</button>
           </p>
-        </form>
+        </form> */}
         <form onSubmit={doSignIn} style={SignInStyle}>
           <p>Sign In :
             <input style={TextStyle}
@@ -87,9 +87,9 @@ function Signin() {
             <button type="submit" style={ButtonStyle}>Sign in</button>
           </p>
         </form>
-        <p style={SignInStyle}>Sign Out:<br />
+        {/* <p style={SignInStyle}>Sign Out:<br />
           <button onClick={doSignOut} style={ButtonStyle}>Sign out</button>
-        </p>
+        </p> */}
       </div>
     </>
   )

@@ -106,12 +106,21 @@ class EventControl extends React.Component {
         </>
       )
     }
+    // if ((isLoaded(auth)) && (auth.currentUser == null)) {
+    //   return (
+    //     <>
+    //       <p>Please sign in to view events</p>
+    //     </>
+    //   )
+    // }
     if ((isLoaded(auth)) && (auth.currentUser == null)) {
+      let currentlyVisibleState = <EventList eventList={this.props.masterEventList} onEventSelection={this.handleChangingSelectedEvent} />;
       return (
         <>
-          <p>Please sign in to view events</p>
+          {currentlyVisibleState}
+          {/* <button onClick={this.handleClick} style={ButtonStyle}>{buttonText}</button> */}
         </>
-      )
+      );
     }
     if ((isLoaded(auth)) && (auth.currentUser != null)) {
       let currentlyVisibleState = null;
